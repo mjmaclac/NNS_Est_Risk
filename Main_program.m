@@ -38,7 +38,7 @@ catch
     ub = [100  1000  1    0     100]';                                  % Upper bound
     A=[]; b=[]; nonlcon=[];                                             % (Non-)linear constraints
 
-    profs_num=7;  %25 max,used in paper                                % Resolution of profile--evenly spaced
+    profs_num=25;  %25 max,used in paper                                % Resolution of profile--evenly spaced
     alpha_dims=3;                                                       % Number of Delay2Discovery parameters
     profs_tot=profs_num^alpha_dims;                                     % Combinations of alpha parameters
     parms_array=zeros(length(lb),profs_tot);                            % Initialize array of parameter estimates 
@@ -143,7 +143,7 @@ catch
 %     A=[]; b=[]; 
 %     nonlcon = @(parms_late) mycon_bad(parms_late,Tot_val_ln,Cum_Val_ln,use_regions,len);
 
-    profs_num=7;  %~25 max for machines with 16GB RAM                  % Resolution of profile--evenly spaced
+    profs_num=25;  %~25 max for machines with 16GB RAM                  % Resolution of profile--evenly spaced
     alpha_dims=3;                                                       % Number of discovery parameters
     profs_tot=profs_num^alpha_dims;                                     % Combinations of alpha parameters
     parms_array=zeros(length(lb),profs_tot);                            % Initialize array of parameter estimates 
