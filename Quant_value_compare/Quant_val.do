@@ -1,8 +1,9 @@
 drop _all 
 
-cd "U:\NonNative\GitHub_docs\Quant_value_compare" 
+*Working directory (cd) must be manually set to where files are save
+*cd ""
 
-import delimited "U:\NonNative\GitHub_docs\Quant_value_compare\Value_quant_data.csv" 
+import delimited "Value_quant_data.csv" 
 
 save "Data_all", replace
 
